@@ -7,6 +7,7 @@ Para o exemplo, foi utilizado o Python 3.8.1; Bibliotecas: Siemens S7 PLCs. - py
 
 O CLP Utilizado foi a CPU1500 e TIA-Portal V17 , no CLP foi configurado apenas IP e criado um DB(não otimizado).
 
-Código baseado na documentação da biblioteca python-snap7 1.2 . O exemplo em questão é simples, porém muito poderoso. A aprtir daqui, conseguimos criar uma série de soluções baseadas na conectividade com os CLP's, faciçitando a indústria 4.0;
+Código baseado na documentação da biblioteca python-snap7 1.2 . O exemplo em questão é simples, porém muito poderoso. A aprtir daqui, conseguimos criar uma série de soluções baseadas na conectividade com os CLP's, faciçitando a indústria 4.0.
+Foi disponibilizado um código chamado s7_Python_2Bytes que utiliza o mesmo conceito, mas simplificado para leitura de apenas 2bytes(1 word). Isso simplica o processo para instalação e execução na primeira vez.
 
 Autor: Douglas Silva.
