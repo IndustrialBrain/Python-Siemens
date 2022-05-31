@@ -1,0 +1,23 @@
+import snap7
+from snap7.util import*
+
+#Configuração do SNAP7 e tenta a conexão com CLP. IP, Rack, Slot
+client = snap7.client.Client()
+client.connect('192.168.0.200', 0, 1)
+
+#Leitura de 2Bytes(uma word do DB4 e escreve o valor 10)
+comm=client.get_connected()
+if comm:
+    #Leitura
+    data = client.db_read(4, 0, 2)
+    print(get_word(data,0))
+   
+    #Escrita
+    dataW = bytearray(2)
+    snap7.util.set_int(dataW, 0, 10)
+    client.db_write(4, 0, dataW)   
+else:
+    print("erro na conexão")
+
+
+   
