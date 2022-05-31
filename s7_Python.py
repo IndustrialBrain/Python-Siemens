@@ -9,7 +9,7 @@ except:
     print ("Falha de conexão")
    
 
-#Funcção de leitura e escrita. Carrega os endereços da DB, incrementa 1 e depois salva no mesmo endereço
+#Função de leitura e escrita. Carrega os endereços da DB, incrementa 1 e depois salva no mesmo endereço
 def leitura_escrita():
     comm=client.get_connected()
     if comm:
@@ -41,7 +41,7 @@ def leitura_escrita():
         print("erro na conexão")
 
 
-#Fnção ciclíca do Script, executa a cada 1 segundo
+#Função ciclíca do Script, executa a cada 1 segundo
 try:
     while True:  
         leitura_escrita()
